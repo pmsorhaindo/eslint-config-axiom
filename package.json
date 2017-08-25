@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-axiom",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "license": "MPL-2.0",
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.5.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.3.0",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrandwatchLtd/eslint-config-axiom.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^7.0.2"
+  }
+}

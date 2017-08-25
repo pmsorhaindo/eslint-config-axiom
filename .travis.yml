@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  yarn: true
+notifications:
+  email: false
+after_success:
+  - bash ./deploy/publish_to_npm.sh
+env:
+  global:
+    - SOURCE_BRANCH: master
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
