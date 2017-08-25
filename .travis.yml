@@ -1,0 +1,7 @@
+language: node_js
+cache: yarn
+notifications:
+  email: false
+before_script:
+after_success:
+  - bash ./deploy/publish_to_npm.sh
