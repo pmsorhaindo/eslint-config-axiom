@@ -14,7 +14,10 @@
     "comma-dangle": [2, "always-multiline"],
     "comma-spacing": [2],
     "eol-last": [2],
-    "indent-legacy": [2, 2, { "SwitchCase": 0 }],
+    "indent": [2, 2, {
+      "SwitchCase": 0,
+      "ignoredNodes": ["JSXElement"]
+    }],
     "jsx-quotes": [2, "prefer-double"],
     "keyword-spacing": [2],
     "no-case-declarations": [0],
